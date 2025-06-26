@@ -1,0 +1,1128 @@
+{
+	"info": {
+		"_postman_id": "d67ea3f4-bbfa-43dc-a33a-d800285b88e9",
+		"name": "STOCKS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30384418"
+	},
+	"item": [
+		{
+			"name": "CONTAINS",
+			"item": [
+				{
+					"name": "GET CONTAINS BY PORTFOLIO",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImhwYXNjdWFsIiwiaWF0IjoxNzE2NTQxMDY1LCJleHAiOjE3MTY1NDgyNjV9.opSnXRPYwG72iZTXUegqtjNpz3mm77pwnYkJi0YAovI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/contains/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"contains",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LIKES",
+			"item": [
+				{
+					"name": "GET LIKES BY USER",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImhwYXNjdWFsIiwiaWF0IjoxNzE2NTQxMDY1LCJleHAiOjE3MTY1NDgyNjV9.opSnXRPYwG72iZTXUegqtjNpz3mm77pwnYkJi0YAovI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/likes/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"likes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST LIKE",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImhwYXNjdWFsIiwiaWF0IjoxNzE2NTQxMDY1LCJleHAiOjE3MTY1NDgyNjV9.opSnXRPYwG72iZTXUegqtjNpz3mm77pwnYkJi0YAovI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"stockId\": \"AVAX\",\r\n    \"userId\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/likes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"likes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE LIKE",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImhwYXNjdWFsIiwiaWF0IjoxNzE2NTQxMDY1LCJleHAiOjE3MTY1NDgyNjV9.opSnXRPYwG72iZTXUegqtjNpz3mm77pwnYkJi0YAovI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"stockId\": \"IBM\",\r\n    \"userId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/likes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"likes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "OPERATIONS",
+			"item": [
+				{
+					"name": "GET OPERATIONS BY PORTFOLIO",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImhwYXNjdWFsIiwiaWF0IjoxNzE2NTQ1NjA0LCJleHAiOjE3MTY1NTI4MDR9.zNtT1alGHK_nzW3TveHeDp4bvbWx6RXzp1ZUT7KP45w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/operations/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"operations",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST OPERATION",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImhwYXNjdWFsIiwiaWF0IjoxNzE2NTQ1NjA0LCJleHAiOjE3MTY1NTI4MDR9.zNtT1alGHK_nzW3TveHeDp4bvbWx6RXzp1ZUT7KP45w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\": \"BUY\",\r\n    \"portfolioId\": 2,\r\n    \"stockId\": \"AVAX\",\r\n    \"quantity\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/operations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"operations"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PORTFOLIOS",
+			"item": [
+				{
+					"name": "GET PORTFOLIOS BY ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImhwYXNjdWFsIiwiaWF0IjoxNzE2NTQ1NjA0LCJleHAiOjE3MTY1NTI4MDR9.zNtT1alGHK_nzW3TveHeDp4bvbWx6RXzp1ZUT7KP45w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/portfolios/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"portfolios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET PORTFOLIOS BY USER",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImhwYXNjdWFsIiwiaWF0IjoxNzE2NTQ1NjA0LCJleHAiOjE3MTY1NTI4MDR9.zNtT1alGHK_nzW3TveHeDp4bvbWx6RXzp1ZUT7KP45w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/portfolios/user/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"portfolios",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST PORTFOLIO",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImhwYXNjdWFsIiwiaWF0IjoxNzE2NTQ1NjA0LCJleHAiOjE3MTY1NTI4MDR9.zNtT1alGHK_nzW3TveHeDp4bvbWx6RXzp1ZUT7KP45w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"PruebaPortfolio\",\r\n    \"userId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/portfolios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"portfolios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE PORTFOLIO NAME",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImhwYXNjdWFsIiwiaWF0IjoxNzE2NTQ1NjA0LCJleHAiOjE3MTY1NTI4MDR9.zNtT1alGHK_nzW3TveHeDp4bvbWx6RXzp1ZUT7KP45w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"pRsuebaaa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/portfolios/name/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"portfolios",
+								"name",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "HIDE PORTFOLIO IF NULL",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImhwYXNjdWFsIiwiaWF0IjoxNzE2NTQ1NjA0LCJleHAiOjE3MTY1NTI4MDR9.zNtT1alGHK_nzW3TveHeDp4bvbWx6RXzp1ZUT7KP45w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/portfolios/hide/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"portfolios",
+								"hide",
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "STOCKS",
+			"item": [
+				{
+					"name": "GET STOCKS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/stocks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stocks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET TYPE STOCKS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/stocks/type/SHARES",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stocks",
+								"type",
+								"SHARES"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET STOCK DETAILS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/stocks/MCD",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stocks",
+								"MCD"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST STOCK",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImhwYXNjdWFsIiwiaWF0IjoxNzE2NTQ1NjA0LCJleHAiOjE3MTY1NTI4MDR9.zNtT1alGHK_nzW3TveHeDp4bvbWx6RXzp1ZUT7KP45w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"ASDD\",\r\n    \"type\": \"CRYPTOS\",\r\n    \"name\": \"Ethercsm\",\r\n    \"actualPrice\": 2876.85,\r\n    \"openPrice\": 2876.85\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/stocks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stocks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE STOCK",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImhwYXNjdWFsIiwiaWF0IjoxNzE2NTQ1NjA0LCJleHAiOjE3MTY1NTI4MDR9.zNtT1alGHK_nzW3TveHeDp4bvbWx6RXzp1ZUT7KP45w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"price\": 2877.85000000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/stocks/ETH",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stocks",
+								"ETH"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TRANSACTIONS",
+			"item": [
+				{
+					"name": "GET TRANSACTIONS BY USER",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImhwYXNjdWFsIiwiaWF0IjoxNzE2NTQ1NjA0LCJleHAiOjE3MTY1NTI4MDR9.zNtT1alGHK_nzW3TveHeDp4bvbWx6RXzp1ZUT7KP45w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/transactions/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"transactions",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST TRANSACTION",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImhwYXNjdWFsIiwiaWF0IjoxNzE2NTQ1NjA0LCJleHAiOjE3MTY1NTI4MDR9.zNtT1alGHK_nzW3TveHeDp4bvbWx6RXzp1ZUT7KP45w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\": \"OUTFLOW\",\r\n    \"quantity\": 10,\r\n    \"idUser\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/transactions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "COMPLETO"
+		},
+		{
+			"name": "USERS",
+			"item": [
+				{
+					"name": "GET USER BY ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImhwYXNjdWFsIiwiaWF0IjoxNzE2NTQ1NjA0LCJleHAiOjE3MTY1NTI4MDR9.zNtT1alGHK_nzW3TveHeDp4bvbWx6RXzp1ZUT7KP45w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET USER BY EMAIL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/users/email/prueba3@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"email",
+								"prueba3@gmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL USERNAMES",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/users/username/prueba1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"username",
+								"prueba1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "REGISTER USER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"insertDataasdbase\",\r\n    \"name\": \"INSERAT\",\r\n    \"surname\": \"DATASsSADA\",\r\n    \"password\": \"isdaaAS!da3r42\",\r\n    \"iban\": \"ES3202351066101424879132\",\r\n    \"email\": \"holaaaa@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/users/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LOGIN USER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\": \"hpascual\",\r\n    \"password\": \"pruebaa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/users/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE USER NAME",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImhwYXNjdWFsIiwiaWF0IjoxNzE2NTQ1NjA0LCJleHAiOjE3MTY1NTI4MDR9.zNtT1alGHK_nzW3TveHeDp4bvbWx6RXzp1ZUT7KP45w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Pruebaa\",\r\n    \"surname\": \"Dos\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/users/2/name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"2",
+								"name"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE USER PASSWORD",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImhwYXNjdWFsIiwiaWF0IjoxNzE2NTQ1NjA0LCJleHAiOjE3MTY1NTI4MDR9.zNtT1alGHK_nzW3TveHeDp4bvbWx6RXzp1ZUT7KP45w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\": \"Prueba1!1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/users/2/password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"2",
+								"password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE USER EMAIL",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImhwYXNjdWFsIiwiaWF0IjoxNzE2NTQ1NjA0LCJleHAiOjE3MTY1NTI4MDR9.zNtT1alGHK_nzW3TveHeDp4bvbWx6RXzp1ZUT7KP45w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"prueba3@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/users/2/email",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"2",
+								"email"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE USER IBAN",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImhwYXNjdWFsIiwiaWF0IjoxNzE2NTQ1NjA0LCJleHAiOjE3MTY1NTI4MDR9.zNtT1alGHK_nzW3TveHeDp4bvbWx6RXzp1ZUT7KP45w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"iban\": \"ES1202254066101426879137\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/users/2/iban",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"2",
+								"iban"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "STOCKSAPI",
+			"item": [
+				{
+					"name": "API",
+					"item": [
+						{
+							"name": "GET COMMODITIES",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/commodities/COFFEE/daily",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"commodities",
+										"COFFEE",
+										"daily"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET CRYPTOS",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/cryptos/XLM/monthly",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cryptos",
+										"XLM",
+										"monthly"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET SHARES",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/shares/ADBE/60min",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"shares",
+										"ADBE",
+										"60min"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "API_LOCAL",
+					"item": [
+						{
+							"name": "COMMODITIES",
+							"item": [
+								{
+									"name": "GET COMMODITIES",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/commodities_local/",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"commodities_local",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GET COMMODITIES BY ID",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/commodities_local/WTI",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"commodities_local",
+												"WTI"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CRYPTOS",
+							"item": [
+								{
+									"name": "GET CRYPTOS",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/cryptos_local",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"cryptos_local"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GET CRYPTOS BY ID",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/cryptos_local/BTC/weekly",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"cryptos_local",
+												"BTC",
+												"weekly"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "SHARES",
+							"item": [
+								{
+									"name": "GET SHARES",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/shares_local",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"shares_local"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GET SHARES BY ID",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/shares_local/TSLA/5min",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"shares_local",
+												"TSLA",
+												"5min"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
